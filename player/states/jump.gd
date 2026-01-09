@@ -10,7 +10,7 @@ func _init() -> void:
 func enter() -> void:
 	#play animation
 	player.add_debug_indicator(Color.LIME_GREEN)
-	player.velocity.y -= jump_velocity
+	player.velocity.y = -jump_velocity
 	pass
 
 # what happebs when we exit the state
